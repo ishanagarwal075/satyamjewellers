@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Satyam Jewellers | Pure Silver & Gold Jewellery Catalogue</title>
+  <meta name="description" content="Satyam Jewellers - Retailer and Wholesaler in pure silver jewellery and curated gold ornaments. Browse designs by weight categories. Direct WhatsApp inquiry.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              50: '#fdfbf7',
+              100: '#f9f4ea',
+              200: '#f0e3c9',
+              500: '#b38728',
+              600: '#99701d',
+              700: '#7d5914',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --primary-gold: #b38728;
+      --gold-light: #d4af37;
+      --gold-border: #ede5d5;
+      --bg-white: #ffffff;
+      --bg-light: #fbfbf9;
+      --text-dark: #1f1d1a;
+      --text-gray: #5f5a54;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      overflow-x: hidden;
+      padding-bottom: env(safe-area-inset-bottom, 20px);
+      position: relative;
+    }
+
+    /* ==============================================================================
+       LORD GANESHA AUSPICIOUS WATERMARK IN BACKGROUND
+       ============================================================================== */
+    .ganesha-bg-watermark {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: min(85vw, 550px);
+      height: min(85vw, 550px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.038;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cpath fill='%23b38728' d='M250 40c-15 0-30 8-38 20-5 8-7 18-6 28 1 12 7 23 15 31-15 4-29 12-40 23-14 14-23 33-25 53-2 16 1 32 9 46 8 13 20 23 34 29-5 12-7 25-5 38 2 15 10 29 21 39 12 11 28 17 44 17 18 0 35-7 48-20 12-12 19-28 20-45 1-13-2-26-8-37 14-6 26-17 33-30 8-14 11-30 9-46-2-20-11-39-25-53-11-11-25-19-40-23 8-8 14-19 15-31 1-10-1-20-6-28-8-12-23-20-38-20zm0 25c8 0 15 4 19 11 3 4 4 10 3 15-1 7-5 13-10 17-4 3-8 5-12 5s-8-2-12-5c-5-4-9-10-10-17-1-5 0-11 3-15 4-7 11-11 19-11zm-50 95c14 0 28 4 39 12 6 4 11 10 11 18 0 9-5 16-12 21-12 8-26 12-40 12-18 0-35-7-48-19-4-4-7-8-7-14 0-7 4-13 9-17 13-8 30-13 48-13zm100 0c18 0 35 5 48 13 5 4 9 10 9 17 0 6-3 10-7 14-13 12-30 19-48 19-14 0-28-4-40-12-7-5-12-12-12-21 0-8 5-14 11-18 11-8 25-12 39-12zm-50 45c11 0 20 9 20 20s-9 20-20 20-20-9-20-20 9-20 20-20zm0 60c18 0 34 9 44 23 8 11 11 25 9 38-2 15-11 28-24 36-9 5-19 8-29 8-16 0-31-6-42-17-9-9-14-21-15-34-1-14 4-28 13-39 11-10 27-15 44-15zm-2 25c-8 0-15 6-16 14-1 9 5 17 14 18 9 1 17-5 18-14 1-9-5-17-14-18h-2z'/%3E%3Ccircle cx='250' cy='225' r='10' fill='%23b38728'/%3E%3Cpath fill='%23b38728' d='M245 130h10v50h-10zM235 155h30v10h-30z'/%3E%3C/svg%3E");
+    }
+
+    @media screen and (max-width: 768px) {
+      input, select, textarea {
+        font-size: 16px !important;
+      }
+    }
+
+    .font-serif-luxury { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .font-cinzel { font-family: 'Cinzel', serif; }
+    .font-hindi { font-family: 'Noto Serif Devanagari', serif; }
+
+    .touch-scroll-x {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .touch-scroll-x::-webkit-scrollbar { display: none; }
+
+    .product-card {
+      background: #ffffff;
+      border: 1px solid #efeae0;
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .product-card:active { transform: scale(0.985); }
+
+    .filter-btn {
+      transition: all 0.2s ease;
+      border: 1px solid #e7e0d3;
+    }
+    .filter-btn.active {
+      background: #b38728;
+      color: #ffffff;
+      border-color: #b38728;
+      box-shadow: 0 2px 8px rgba(179, 135, 40, 0.25);
+    }
+
+    .weight-chip.active {
+      background-color: #fef3c7;
+      border-color: #d97706;
+      color: #92400e;
+      font-weight: 700;
+    }
+
+    .drawer-backdrop {
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+    .mobile-safe-bottom {
+      padding-bottom: max(12px, env(safe-area-inset-bottom));
+    }
+
+    /* OWNER LOGIN VISIBILITY: owner tools are hidden from customers */
+    body:not(.is-owner) .owner-only { display: none !important; }
+    body.is-owner .guest-only { display: none !important; }
+  </style>
+</head>
+<body class="pb-24 md:pb-12 text-[#24211d]">
+
+  <!-- AUSPICIOUS GANESHA WATERMARK IN BACKGROUND -->
+  <div class="ganesha-bg-watermark"></div>
+
+  <!-- 1. TOP HEADER: STORE LOGO, TIMINGS & OWNER SETTINGS BUTTON -->
+  <header class="relative z-20 bg-white/95 backdrop-blur-md border-b border-[#ece5d8] shadow-sm">
+    
+    <!-- Top Utility Announcement -->
+    <div class="bg-[#fbf9f4] border-b border-[#eee6d7] py-1.5 px-3 text-xs">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-stone-700 font-medium text-[11px]" id="nav-store-status">Showroom Open Today</span>
+          <span class="text-stone-300">|</span>
+          <span class="text-amber-800 font-hindi text-[11px]">॥ श्री गणेशाय नमः ॥</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- Small Owner Login button (visible to everyone, only owner can proceed) -->
+          <button 
+            type="button"
+            onclick="openAuthModal()" 
+            class="guest-only px-2.5 py-1 bg-white hover:bg-stone-50 text-stone-700 border border-stone-300 rounded-lg text-[11px] font-semibold flex items-center gap-1 shadow-sm transition-all active:scale-95">
+            <i data-lucide="lock" class="w-3.5 h-3.5 text-amber-700"></i>
+            <span>Owner Login</span>
+          </button>
+
+          <!-- Owner Control Center Button (owner only) -->
+          <button 
+            type="button"
+            onclick="openOwnerSettingsModal()" 
+            class="owner-only px-2.5 py-1 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 rounded-lg text-[11px] font-bold flex items-center gap-1 shadow-sm transition-all active:scale-95">
+            <i data-lucide="settings" class="w-3.5 h-3.5 text-amber-700"></i>
+            <span>Owner Control (मालिक सेटिंग)</span>
+          </button>
+          <button 
+            type="button"
+            onclick="ownerLogout()" 
+            class="owner-only px-2.5 py-1 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-[11px] font-bold flex items-center gap-1 shadow-sm active:scale-95">
+            <i data-lucide="log-out" class="w-3.5 h-3.5"></i>
+            <span>Logout</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 py-3 flex items-center justify-between">
+      
+      <!-- Brand Logo (Light Elegant Whitish Look) -->
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#f9f5ec] border border-[#d8c396] flex items-center justify-center text-amber-800 font-cinzel font-bold text-lg shadow-sm">
+          SJ
+        </div>
+        <div>
+          <h1 class="font-cinzel text-lg sm:text-2xl font-bold tracking-wider text-stone-900 leading-none">
+            SATYAM <span class="text-amber-700 font-semibold">JEWELLERS</span>
+          </h1>
+          <p class="text-[10px] sm:text-[11px] tracking-wide text-stone-500 mt-0.5">
+            Retail & Wholesale in Pure Silver Jewellery
+          </p>
+        </div>
+      </a>
+
+      <!-- Quick Actions -->
+      <div class="flex items-center gap-2">
+        <a 
+          id="nav-wa-link" 
+          href="https://wa.me/919876543210" 
+          target="_blank" 
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-sm transition-transform active:scale-95">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span class="hidden sm:inline">WhatsApp</span>
+        </a>
+
+        <!-- Shortlist Heart -->
+        <button 
+          type="button" 
+          onclick="openWishlistDrawer()" 
+          class="relative p-2 rounded-full hover:bg-stone-100 text-stone-700 transition-colors">
+          <i data-lucide="heart" class="w-5 h-5 text-red-500"></i>
+          <span class="wishlist-counter-badge absolute -top-1 -right-1 w-4 h-4 rounded-full bg-red-600 text-white text-[9px] font-bold flex items-center justify-center hidden">
+            0
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 2. OWNER IN-PAGE ACTION BAR (MAKES EDITING & ADDING OBVIOUS) -->
+  <div class="owner-only relative z-10 bg-[#faf6ee] border-b border-[#e8ddc7] py-2 px-3 sm:px-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
+      <div class="flex items-center gap-1.5 text-center sm:text-left">
+        <span class="px-2 py-0.5 rounded bg-amber-200 text-amber-900 font-bold text-[10px] uppercase">Owner Panel</span>
+        <span class="text-stone-700">Add photos, set phone/WhatsApp number, or update store hours here:</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button 
+          type="button"
+          onclick="openAddProductModal()" 
+          class="px-3.5 py-1.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded-lg font-bold flex items-center gap-1.5 shadow-sm active:scale-95">
+          <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+          <span>Add Jewellery Photo & Weight</span>
+        </button>
+        <button 
+          type="button"
+          onclick="openOwnerSettingsModal()" 
+          class="px-3 py-1.5 bg-white hover:bg-stone-50 border border-stone-300 text-stone-800 rounded-lg font-semibold flex items-center gap-1 active:scale-95">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-700"></i>
+          <span>Change Number & Hours</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. CLEAN LIGHT HERO BANNER (NO DARK WINE COLORS) -->
+  <section class="relative z-10 py-8 sm:py-12 px-4 text-center bg-gradient-to-b from-white via-[#faf8f4] to-transparent">
+    <div class="max-w-3xl mx-auto">
+      
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f6eee0] text-amber-900 text-xs font-semibold mb-3 border border-[#e4d4ba]">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-700"></i>
+        <span>Authentic Showroom Design Catalogue (No Prices Online)</span>
+      </div>
+
+      <h2 class="font-serif-luxury text-2xl sm:text-4xl md:text-5xl font-bold text-stone-900 leading-tight">
+        Pure Silver & Fine Gold Jewellery
+      </h2>
+
+      <p class="text-stone-600 text-xs sm:text-sm mt-2 max-w-xl mx-auto leading-relaxed">
+        Specializing in pure silver jewellery (Payal, Kadas, Chains, Pooja Utensils, 999 Murtis) and curated 22K gold ornaments. Browse our collection by weight and contact the owner directly on WhatsApp.
+      </p>
+
+      <!-- Clean Notice Box -->
+      <div class="mt-4 p-3 bg-white rounded-xl border border-[#ede5d6] text-xs text-stone-600 max-w-lg mx-auto shadow-sm flex items-start gap-2 text-left">
+        <span class="text-base text-amber-700 flex-shrink-0">⚖️</span>
+        <div>
+          <strong class="text-stone-900 block font-semibold">Weight Categories Only:</strong>
+          Daily bullion prices fluctuate. We display designs by weight ranges and purity. WhatsApp the owner to inquire or book a showroom visit.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. MAIN CATALOGUE & SEARCH SECTION (SIMPLISTIC MOBILE 2-COLUMN) -->
+  <main class="relative z-10 max-w-7xl mx-auto px-3 sm:px-6">
+    
+    <!-- Filter and Search Controls -->
+    <div class="bg-white rounded-2xl p-3.5 sm:p-5 border border-[#ece4d5] shadow-sm mb-5 space-y-3.5">
+      
+      <!-- Search and Metal Pills -->
+      <div class="grid grid-cols-1 sm:grid-cols-12 gap-2.5 items-center">
+        
+        <!-- Search Input -->
+        <div class="sm:col-span-6 relative">
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search payal, kada, chain, 45g..." 
+            class="w-full pl-9 pr-3 py-2 rounded-xl border border-stone-200 bg-[#faf9f6] focus:bg-white focus:border-amber-500 focus:outline-none text-xs sm:text-sm"
+          />
+          <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3 top-2.5"></i>
+        </div>
+
+        <!-- Metal Toggle: All | Silver | Gold -->
+        <div class="sm:col-span-6 flex rounded-xl p-1 bg-stone-100 text-xs font-semibold">
+          <button type="button" data-metal="all" onclick="setMetalFilter('all')" class="metal-btn flex-1 py-1.5 rounded-lg text-center bg-white shadow-sm text-stone-900">
+            All Metal
+          </button>
+          <button type="button" data-metal="silver" onclick="setMetalFilter('silver')" class="metal-btn flex-1 py-1.5 rounded-lg text-center text-stone-600">
+            Silver (Major)
+          </button>
+          <button type="button" data-metal="gold" onclick="setMetalFilter('gold')" class="metal-btn flex-1 py-1.5 rounded-lg text-center text-stone-600">
+            22K Gold
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Categories Scrollable Pills -->
+      <div class="border-t border-stone-100 pt-2.5">
+        <div class="text-[11px] font-semibold text-stone-500 mb-1.5 flex items-center justify-between">
+          <span>Categories (श्रेणी चुनें):</span>
+          <button type="button" onclick="openOwnerSettingsModal('category-section')" class="owner-only text-amber-800 hover:text-amber-900 text-[10px] font-bold flex items-center gap-1 bg-amber-50 hover:bg-amber-100 px-2 py-0.5 rounded-full border border-amber-200 transition-colors">
+            <span>+ Add / Manage Categories</span>
+          </button>
+        </div>
+        <div id="category-pills" class="touch-scroll-x flex items-center gap-1.5 pb-1">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Weight Range Pills -->
+      <div class="border-t border-stone-100 pt-2.5">
+        <div class="text-[11px] font-semibold text-stone-500 mb-1.5 flex items-center justify-between">
+          <span>Filter by Weight (वजन अनुसार):</span>
+          <span class="text-stone-400">Pure weight only</span>
+        </div>
+        <div id="weight-pills" class="touch-scroll-x flex items-center gap-1.5 pb-1">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Product Count & Reset -->
+    <div class="flex items-center justify-between text-xs text-stone-600 mb-3 px-1">
+      <span id="product-count-text" class="font-medium">Showing designs...</span>
+      <button onclick="resetFilters()" class="text-amber-800 hover:text-amber-900 underline font-semibold flex items-center gap-1">
+        <i data-lucide="rotate-ccw" class="w-3 h-3"></i>
+        <span>Reset Filters</span>
+      </button>
+    </div>
+
+    <!-- PRODUCT GRID: 2 COLUMNS ON MOBILE (LIKE TANISHQ/KALYAN), 4 ON DESKTOP -->
+    <div id="products-grid" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4 md:gap-5">
+      <!-- Populated dynamically -->
+    </div>
+
+    <!-- 4.1 PROMINENT READY STOCK NOTICE BANNER (MANY MORE VIBRANT DESIGNS IN SHOWROOM) -->
+    <div class="mt-6 sm:mt-8 bg-gradient-to-r from-[#fefbf5] via-[#fbf7ed] to-[#fefbf5] border border-[#e8dcb8] rounded-2xl p-4 sm:p-6 shadow-sm text-center relative overflow-hidden">
+      <div class="max-w-2xl mx-auto space-y-2.5">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100/90 text-amber-900 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
+          <span>✨</span>
+          <span>Showroom Ready Stock Notice</span>
+        </div>
+        <h3 id="showroom-banner-heading" class="font-serif-luxury text-xl sm:text-2xl font-bold text-stone-900">
+          1,000+ More Vibrant Designs in Ready Stock!
+        </h3>
+        <p id="showroom-banner-text" class="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-xl mx-auto">
+          It is not possible to display our entire live showroom inventory online. We stock thousands of traditional & contemporary handcrafted Silver Payals, Pajebs, Kadas, Bichhiya, Chains, Pooja Articles, and 22K Gold ornaments at our showroom.
+        </p>
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-2.5">
+          <a 
+            id="showroom-banner-wa-btn" 
+            href="https://wa.me/919876543210" 
+            target="_blank" 
+            class="w-full sm:w-auto px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-95">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Ask for More Photos / Video on WhatsApp</span>
+          </a>
+          <a 
+            href="#showroom-section" 
+            class="w-full sm:w-auto px-5 py-2.5 bg-white hover:bg-stone-50 text-stone-800 border border-stone-200 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 shadow-sm">
+            <i data-lucide="map-pin" class="w-4 h-4 text-amber-700"></i>
+            <span>Visit Showroom to Explore All</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 5. SHOWROOM INFORMATION (TIMINGS, ADDRESS, OWNER CALL) -->
+  <section id="showroom-section" class="relative z-10 max-w-7xl mx-auto px-3 sm:px-6 mt-12 mb-8">
+    <div class="bg-white rounded-2xl p-5 sm:p-8 border border-[#e8decb] shadow-sm">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        
+        <div>
+          <span class="text-xs uppercase font-bold text-amber-800 tracking-wider">Showroom Visit</span>
+          <h3 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-stone-900 mt-1">Visit Satyam Jewellers</h3>
+          <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">
+            Feel the weight, inspect the craftsmanship, and test the purity of our silver and gold in person. Warm traditional hospitality awaits your family.
+          </p>
+
+          <div class="mt-4 space-y-2 text-xs text-stone-700">
+            <div class="flex items-start gap-2">
+              <span class="text-base text-amber-700">📍</span>
+              <div>
+                <strong class="text-stone-900 block">Address:</strong>
+                <span id="store-address-display">Sarafa Bazar, Main Market, City Center - 282001</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-2">
+              <span class="text-base text-amber-700">⏰</span>
+              <div>
+                <strong class="text-stone-900 block">Showroom Timings:</strong>
+                <span id="store-hours-display">Mon - Sat: 10:30 AM - 8:30 PM | Sunday: 11:30 AM - 5:30 PM</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-2">
+              <span class="text-base text-amber-700">📞</span>
+              <div>
+                <strong class="text-stone-900 block">Calling & WhatsApp:</strong>
+                <span id="store-phone-display">+91 98765 43210</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2.5">
+          <a 
+            id="store-wa-contact-btn" 
+            href="https://wa.me/919876543210" 
+            target="_blank" 
+            class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-sm transition-colors active:scale-95">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Chat on WhatsApp (Get Directions)</span>
+          </a>
+
+          <a 
+            id="store-phone-call-btn" 
+            href="tel:+919876543210" 
+            class="w-full py-3 bg-stone-900 hover:bg-stone-800 text-white rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-sm transition-colors active:scale-95">
+            <i data-lucide="phone" class="w-4 h-4 text-amber-400"></i>
+            <span>Call Showroom Owner</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FOOTER -->
+  <footer class="relative z-10 bg-white border-t border-[#ece4d5] text-stone-500 text-xs py-6 text-center">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <p class="font-cinzel font-bold text-stone-800">SATYAM JEWELLERS</p>
+      <p class="text-[11px]">Wholesale & Retail Pure Silver Jewellery | 22K Gold Segment</p>
+      <p class="text-[10px] text-stone-400">Light Minimalist Aesthetic with Auspicious Ganesha Watermark.</p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 0: OWNER LOGIN / FIRST-TIME SETUP / CHANGE PASSWORD -->
+  <!-- ========================================================================= -->
+  <div id="auth-modal" class="fixed inset-0 z-[60] drawer-backdrop hidden items-center justify-center p-3 sm:p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-5 shadow-2xl border border-stone-200 relative">
+      <div class="flex items-center justify-between border-b pb-3 mb-4">
+        <div>
+          <span class="text-[10px] uppercase font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded">Owner Only</span>
+          <h3 id="auth-title" class="font-cinzel text-lg font-bold text-stone-900 mt-0.5">Owner Login</h3>
+        </div>
+        <button type="button" onclick="closeAuthModal()" class="w-7 h-7 rounded-full bg-stone-100 text-stone-600 flex items-center justify-center font-bold">✕</button>
+      </div>
+
+      <form id="auth-form" onsubmit="submitAuthForm(event)" class="space-y-3 text-xs" autocomplete="off">
+        <p id="auth-hint" class="text-[11px] text-stone-500 leading-relaxed"></p>
+
+        <div id="auth-current-wrap" class="hidden">
+          <label class="block font-semibold text-stone-700 mb-1">Current Password</label>
+          <input type="password" id="auth-current" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white">
+        </div>
+
+        <div>
+          <label id="auth-id-label" class="block font-semibold text-stone-700 mb-1">Login ID</label>
+          <input type="text" id="auth-id" autocapitalize="none" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white" required>
+        </div>
+
+        <div>
+          <label id="auth-pass-label" class="block font-semibold text-stone-700 mb-1">Password</label>
+          <input type="password" id="auth-pass" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white" required>
+        </div>
+
+        <div id="auth-confirm-wrap" class="hidden">
+          <label class="block font-semibold text-stone-700 mb-1">Confirm Password</label>
+          <input type="password" id="auth-confirm" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white">
+        </div>
+
+        <label class="flex items-center gap-2 text-[11px] text-stone-600">
+          <input type="checkbox" id="auth-show-pass" onchange="toggleAuthPassVisibility(this.checked)">
+          Show password
+        </label>
+
+        <p id="auth-error" class="hidden text-[11px] font-semibold text-red-600 bg-red-50 border border-red-200 rounded-lg px-2.5 py-1.5"></p>
+
+        <button id="auth-submit-btn" type="submit" class="w-full py-3 bg-amber-700 hover:bg-amber-800 text-white rounded-xl font-bold shadow-md active:scale-95">
+          Login
+        </button>
+
+        <button id="auth-reset-link" type="button" onclick="resetOwnerLogin()" class="hidden w-full text-center text-[10px] text-stone-400 hover:text-red-600 underline">
+          Forgot password? Reset owner login on this device
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 1: OWNER CONTROL / SETTINGS (CHANGE NUMBER, HOURS, ADDRESS) -->
+  <!-- ========================================================================= -->
+  <div id="owner-settings-modal" class="fixed inset-0 z-50 drawer-backdrop hidden items-center justify-center p-3 sm:p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-5 shadow-2xl border border-stone-200 relative">
+      
+      <div class="flex items-center justify-between border-b pb-3 mb-4">
+        <div>
+          <span class="text-[10px] uppercase font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded">Owner Control</span>
+          <h3 class="font-cinzel text-lg font-bold text-stone-900 mt-0.5">Store Settings (दुकान सेटिंग)</h3>
+        </div>
+        <button onclick="closeOwnerSettingsModal()" class="w-7 h-7 rounded-full bg-stone-100 text-stone-600 flex items-center justify-center font-bold">✕</button>
+      </div>
+
+      <form id="owner-settings-form" onsubmit="saveStoreSettings(event)" class="space-y-3.5 text-xs">
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">Store Name (दुकान का नाम)</label>
+          <input type="text" id="setting-store-name" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white" required>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block font-semibold text-stone-700 mb-1">WhatsApp Number (बिना + के)</label>
+            <input type="text" id="setting-store-whatsapp" placeholder="919876543210" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white font-mono" required>
+          </div>
+          <div>
+            <label class="block font-semibold text-stone-700 mb-1">Calling Phone Number</label>
+            <input type="text" id="setting-store-phone" placeholder="+91 98765 43210" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white font-mono" required>
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">Showroom Timings (Mon - Sat)</label>
+          <input type="text" id="setting-store-hours" placeholder="Mon - Sat: 10:30 AM - 8:30 PM" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white">
+        </div>
+
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">Sunday Timings</label>
+          <input type="text" id="setting-store-sunday" placeholder="Sunday: 11:30 AM - 5:30 PM (or Closed)" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white">
+        </div>
+
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">Showroom Address (दुकान का पता)</label>
+          <input type="text" id="setting-store-address" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white">
+        </div>
+
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1">Live Status Ticker (टॉप पर दिखने वाला स्टेटस)</label>
+          <input type="text" id="setting-store-status" placeholder="Showroom Open Today | Walk-ins Welcome" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white">
+        </div>
+
+        <!-- SECTION: MANAGE JEWELLERY CATEGORIES -->
+        <div id="settings-category-section" class="border-t border-stone-200 pt-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Category Manager</span>
+              <h4 class="font-bold text-stone-900 text-xs sm:text-sm mt-1">Jewellery Categories (आभूषण श्रेणियां)</h4>
+            </div>
+            <button type="button" onclick="restoreDefaultCategories()" class="text-[10px] text-amber-800 hover:underline">
+              Restore Defaults
+            </button>
+          </div>
+          <p class="text-[11px] text-stone-500">
+            Add any category in your own words (e.g. Pajeb, Chhote Bachche Payal, Bichhiya, Rings, Silver Kada, etc.).
+          </p>
+
+          <div class="flex gap-2">
+            <input 
+              type="text" 
+              id="new-category-name-input" 
+              placeholder="e.g. Pajeb, Baby Nazariya, Antique Silver" 
+              class="flex-1 p-2.5 border rounded-lg bg-stone-50 focus:bg-white text-xs"
+              onkeydown="if(event.key === 'Enter'){ event.preventDefault(); addNewCategory(); }"
+            />
+            <button 
+              type="button" 
+              onclick="addNewCategory()" 
+              class="px-3.5 py-2 bg-amber-700 hover:bg-amber-800 text-white rounded-lg font-bold text-xs shadow-sm active:scale-95 whitespace-nowrap">
+              + Add
+            </button>
+          </div>
+
+          <div>
+            <span class="text-[10px] uppercase font-bold text-stone-400 block mb-1">Active Categories on Website (Click ✕ to remove):</span>
+            <div id="category-manager-list" class="flex flex-wrap gap-1.5 p-2 bg-stone-50 rounded-lg border border-stone-200 max-h-36 overflow-y-auto">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: OWNER LOGIN SECURITY -->
+        <div class="border-t border-stone-200 pt-3.5 flex items-center justify-between gap-2">
+          <div>
+            <span class="text-[10px] uppercase font-bold text-stone-700 bg-stone-100 px-2 py-0.5 rounded border border-stone-200">Security</span>
+            <p class="text-[11px] text-stone-500 mt-1">Change your owner Login ID or Password.</p>
+          </div>
+          <button type="button" onclick="openAuthModal('change')" class="px-3 py-2 bg-stone-900 hover:bg-stone-800 text-white rounded-lg font-bold text-xs whitespace-nowrap">
+            🔑 Change Login
+          </button>
+        </div>
+
+        <!-- SECTION: MORE VIBRANT DESIGNS SHOWROOM NOTICE -->
+        <div class="border-t border-stone-200 pt-3.5 space-y-2">
+          <div>
+            <span class="text-[10px] uppercase font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Customer Notice</span>
+            <h4 class="font-bold text-stone-900 text-xs sm:text-sm mt-1">Ready Stock Notice (स्टोर में और डिज़ाइन्स का संदेश)</h4>
+            <p class="text-[11px] text-stone-500">
+              Text shown to customers explaining that 1,000+ more vibrant items exist in ready stock at the showroom.
+            </p>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-stone-700 mb-0.5">Notice Heading</label>
+            <input 
+              type="text" 
+              id="setting-more-heading" 
+              placeholder="1,000+ More Vibrant Designs in Ready Stock!" 
+              class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white text-xs"
+            />
+          </div>
+
+          <div>
+            <label class="block font-semibold text-stone-700 mb-0.5">Notice Description for Customers</label>
+            <textarea 
+              id="setting-more-text" 
+              rows="2" 
+              placeholder="It is impossible to upload every design online. We have thousands more handcrafted items in ready stock..." 
+              class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white text-xs"></textarea>
+          </div>
+        </div>
+
+        <div class="pt-2 flex items-center gap-2">
+          <button type="submit" class="flex-1 py-3 bg-amber-700 hover:bg-amber-800 text-white rounded-xl font-bold shadow-md active:scale-95">
+            Save Settings & Notice (सेव करें)
+          </button>
+          <button type="button" onclick="closeOwnerSettingsModal()" class="py-3 px-4 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-xl font-semibold">
+            Cancel
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 2: ADD / EDIT JEWELLERY DESIGN (CAMERA PHOTO UPLOAD) -->
+  <!-- ========================================================================= -->
+  <div id="add-product-modal" class="fixed inset-0 z-50 drawer-backdrop hidden items-center justify-center p-3 sm:p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full max-h-[92vh] overflow-y-auto p-5 shadow-2xl border border-stone-200 relative">
+      
+      <div class="flex items-center justify-between border-b pb-3 mb-4">
+        <div>
+          <span class="text-[10px] uppercase font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Product Upload</span>
+          <h3 id="product-modal-title" class="font-cinzel text-lg font-bold text-stone-900 mt-0.5">Add Jewellery Item</h3>
+        </div>
+        <button onclick="closeAddProductModal()" class="w-7 h-7 rounded-full bg-stone-100 text-stone-600 flex items-center justify-center font-bold">✕</button>
+      </div>
+
+      <form id="add-product-form" onsubmit="saveProductItem(event)" class="space-y-3 text-xs">
+        
+        <!-- Camera / Gallery Upload Box -->
+        <div class="p-3 bg-amber-50/70 border-2 border-dashed border-amber-300 rounded-xl text-center">
+          <label class="block font-bold text-amber-900 mb-1">
+            📸 Take Photo with Camera or Pick from Gallery
+          </label>
+          <input 
+            type="file" 
+            id="product-file-input" 
+            accept="image/*" 
+            capture="environment"
+            class="block w-full text-xs text-stone-600 file:mr-2 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-amber-700 file:text-white cursor-pointer"
+          />
+          <div id="product-photo-preview" class="mt-2 hidden flex items-center justify-center gap-2">
+            <img id="preview-img-tag" src="" class="w-14 h-14 object-cover rounded-lg border border-stone-200" alt="Preview">
+            <span class="text-[11px] text-emerald-700 font-bold">✓ Photo Attached & Compressed</span>
+          </div>
+          <div class="mt-1.5 text-[10px] text-stone-400">Or paste an image web link below:</div>
+          <input type="url" id="product-url-input" placeholder="https://..." class="w-full p-2 border rounded-lg bg-white mt-0.5 text-xs">
+        </div>
+
+        <div>
+          <label class="block font-semibold text-stone-700 mb-0.5">Product Name (आभूषण का नाम) *</label>
+          <input type="text" id="prod-name" placeholder="e.g. Bombay Polish Fancy Silver Payal" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white" required>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2.5">
+          <div>
+            <label class="block font-semibold text-stone-700 mb-0.5">Category *</label>
+            <select id="prod-category" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white"></select>
+          </div>
+          <div>
+            <label class="block font-semibold text-stone-700 mb-0.5">Metal *</label>
+            <select id="prod-metal" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white">
+              <option value="silver">Pure Silver (चांदी)</option>
+              <option value="gold">22K Gold (सोना)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2.5">
+          <div>
+            <label class="block font-semibold text-stone-700 mb-0.5">Weight Range * (No Price)</label>
+            <input type="text" id="prod-weight-cat" placeholder="e.g. 35g - 50g" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white font-mono" required>
+          </div>
+          <div>
+            <label class="block font-semibold text-stone-700 mb-0.5">Approx Weight in Grams *</label>
+            <input type="number" id="prod-weight-num" placeholder="e.g. 42" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white font-mono" required>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2.5">
+          <div>
+            <label class="block font-semibold text-stone-700 mb-0.5">Exact Gross Weight</label>
+            <input type="text" id="prod-gross-wt" placeholder="e.g. 42.500 g" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white font-mono">
+          </div>
+          <div>
+            <label class="block font-semibold text-stone-700 mb-0.5">Purity Hallmark</label>
+            <input type="text" id="prod-purity" placeholder="e.g. 92.5 Sterling Silver" class="w-full p-2.5 border rounded-lg bg-stone-50 focus:bg-white">
+          </div>
+        </div>
+
+        <div class="pt-2 flex items-center gap-2">
+          <button id="prod-submit-btn" type="submit" class="flex-1 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold shadow-md active:scale-95">
+            + Save to Website (तुरंत जोड़ें)
+          </button>
+          <button type="button" onclick="closeAddProductModal()" class="py-3 px-4 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-xl font-semibold">
+            Cancel
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 3: STORE VISIT WISHLIST DRAWER -->
+  <!-- ========================================================================= -->
+  <div id="wishlist-backdrop" onclick="closeWishlistDrawer()" class="fixed inset-0 z-50 drawer-backdrop hidden transition-opacity"></div>
+  <div id="wishlist-drawer" class="fixed top-0 right-0 bottom-0 w-full sm:w-96 bg-white z-50 shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="p-4 border-b flex items-center justify-between bg-stone-50">
+      <div>
+        <h3 class="font-cinzel text-base font-bold text-stone-900">❤️ Store Visit Wishlist</h3>
+        <p id="wishlist-count-header" class="text-xs text-stone-500">0 designs shortlisted</p>
+      </div>
+      <button onclick="closeWishlistDrawer()" class="p-1.5 rounded-lg hover:bg-stone-200 text-stone-600">✕</button>
+    </div>
+
+    <div id="wishlist-items-list" class="flex-1 overflow-y-auto p-3.5 space-y-2.5">
+      <!-- Populated dynamically -->
+    </div>
+
+    <div class="p-4 border-t bg-stone-50 space-y-2">
+      <button 
+        id="wishlist-send-btn" 
+        onclick="sendWishlistToWhatsApp()" 
+        class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition-colors active:scale-95">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>Send Wishlist to WhatsApp (मालिक को भेजें)</span>
+      </button>
+      <button onclick="closeWishlistDrawer()" class="w-full py-2 bg-stone-200 hover:bg-stone-300 text-stone-800 rounded-xl text-xs font-medium">
+        Continue Browsing
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MOBILE BOTTOM STICKY BAR (PHONE SHOPPING CONTROLS) -->
+  <!-- ========================================================================= -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-stone-200 px-3 py-2 flex items-center justify-around shadow-2xl mobile-safe-bottom">
+    <a href="#" class="flex flex-col items-center text-[10px] text-stone-600">
+      <i data-lucide="sparkles" class="w-4 h-4 mb-0.5 text-stone-800"></i>
+      <span>Catalogue</span>
+    </a>
+
+    <button type="button" onclick="openAddProductModal()" class="owner-only flex flex-col items-center text-[10px] text-amber-800 font-bold">
+      <i data-lucide="plus-circle" class="w-4 h-4 mb-0.5 text-amber-700"></i>
+      <span>+ Add Item</span>
+    </button>
+
+    <button type="button" onclick="openWishlistDrawer()" class="relative flex flex-col items-center text-[10px] text-stone-600">
+      <i data-lucide="heart" class="w-4 h-4 mb-0.5 text-red-500"></i>
+      <span>Wishlist</span>
+      <span class="wishlist-counter-badge absolute -top-1 right-2 w-3.5 h-3.5 rounded-full bg-red-600 text-white text-[8px] font-bold flex items-center justify-center hidden">0</span>
+    </button>
+
+    <a id="mobile-call-link" href="tel:+919876543210" class="flex flex-col items-center text-[10px] text-stone-600">
+      <i data-lucide="phone" class="w-4 h-4 mb-0.5 text-stone-800"></i>
+      <span>Call</span>
+    </a>
+
+    <a id="mobile-wa-link" href="https://wa.me/919876543210" target="_blank" class="flex flex-col items-center text-[10px] text-emerald-600 font-bold px-3 py-1 bg-emerald-50 rounded-xl border border-emerald-200">
+      <i data-lucide="message-circle" class="w-4 h-4 mb-0.5 text-emerald-600"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-stone-900 text-white px-4 py-2.5 rounded-full text-xs font-semibold shadow-2xl transition-all duration-300 opacity-0 pointer-events-none flex items-center gap-1.5 border border-amber-500/40 text-center max-w-[90vw]">
+    <span id="toast-text">Toast message</span>
+  </div>
+
+  <!-- EMBEDDED COMPLETE DATA & APP SCRIPT (100% SELF-CONTAINED - NEVER BREAKS ON MOBILE!) -->
+  <script>
+    // 1. DEFAULT DATA
+    const DEFAULT_STORE = {
+      storeName: "Satyam Jewellers",
+      phone: "+91 98765 43210",
+      whatsappNumber: "919876543210",
+      address: "Sarafa Bazar, Main Market, City Center - 282001",
+      timing: "Mon - Sat: 10:30 AM - 8:30 PM",
+      sundayTiming: "Sunday: 11:30 AM - 5:30 PM",
+      statusText: "Showroom Open Today | WhatsApp Inquiries 24/7",
+      moreNoticeHeading: "1,000+ More Vibrant Designs in Ready Stock!",
+      moreNoticeText: "It is not possible to display our entire live showroom inventory online. We stock thousands of traditional & contemporary handcrafted Silver Payals, Pajebs, Kadas, Bichhiya, Chains, Pooja Articles, and 22K Gold ornaments at our showroom. WhatsApp us for live photos or a video call."
+    };
+
+    const DEFAULT_CATEGORIES = [
+      { id: "all", name: "All Designs" },
+      { id: "silver-payal", name: "Silver Payal" },
+      { id: "silver-kada", name: "Silver Kadas" },
+      { id: "silver-chains", name: "Silver Chains" },
+      { id: "pooja-utensils", name: "Pooja & Utensils" },
+      { id: "silver-idols", name: "999 Idols" },
+      { id: "silver-coins", name: "999 Coins" },
+      { id: "rings-bichhiya", name: "Bichhiya & Rings" },
+      { id: "gold-collection", name: "22K Gold" }
+    ];
+
+    const DEFAULT_WEIGHTS = [
+      { id: "all", label: "All Weights" },
+      { id: "under-10g", label: "< 10g", min: 0, max: 10 },
+      { id: "10g-25g", label: "10g - 25g", min: 10, max: 25 },
+      { id: "25g-50g", label: "25g - 50g", min: 25, max: 50 },
+      { id: "50g-100g", label: "50g - 100g", min: 50, max: 100 },
+      { id: "above-100g", label: "100g+", min: 100, max: 9999 }
+    ];
+
+    const DEFAULT_PRODUCTS = [
+      {
+        id: "SJ-SLV-01",
+        name: "Bombay Polish Daily Wear Silver Payal",
+        category: "silver-payal",
+        metal: "silver",
+        purity: "80% Traditional Silver",
+        weightCategory: "35g - 50g",
+        approxWeightNumber: 42,
+        grossWeight: "42.500 g",
+        image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-SLV-02",
+        name: "Royal Meenakari Bridal Heavy Silver Payal",
+        category: "silver-payal",
+        metal: "silver",
+        purity: "92.5 Sterling Silver",
+        weightCategory: "150g - 250g",
+        approxWeightNumber: 185,
+        grossWeight: "185.400 g",
+        image: "https://images.unsplash.com/photo-1611591475152-478311382490?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-SLV-03",
+        name: "Bahubali Heavy Lion-Face Gents Kada",
+        category: "silver-kada",
+        metal: "silver",
+        purity: "92.5 Sterling Silver",
+        weightCategory: "50g - 100g",
+        approxWeightNumber: 78,
+        grossWeight: "78.600 g",
+        image: "https://images.unsplash.com/photo-1611591475152-478311382490?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-SLV-04",
+        name: "Classic Solid Silver Round Gents Kada",
+        category: "silver-kada",
+        metal: "silver",
+        purity: "80% Traditional Silver",
+        weightCategory: "50g - 100g",
+        approxWeightNumber: 52,
+        grossWeight: "52.000 g",
+        image: "https://images.unsplash.com/photo-1611591475152-478311382490?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-SLV-05",
+        name: "Handcrafted Silver Chatai & Box Chain",
+        category: "silver-chains",
+        metal: "silver",
+        purity: "92.5 Sterling Silver",
+        weightCategory: "25g - 50g",
+        approxWeightNumber: 38,
+        grossWeight: "38.200 g",
+        image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-SLV-06",
+        name: "Italian Rope Unisex Lightweight Silver Chain",
+        category: "silver-chains",
+        metal: "silver",
+        purity: "92.5 Sterling Silver",
+        weightCategory: "under-10g",
+        approxWeightNumber: 8,
+        grossWeight: "7.800 g",
+        image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-SLV-07",
+        name: "999 Fine Silver Laxmi Ganesh Idol Pair",
+        category: "silver-idols",
+        metal: "silver",
+        purity: "99.9% Fine Silver",
+        weightCategory: "50g - 100g",
+        approxWeightNumber: 75,
+        grossWeight: "75.000 g",
+        image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-SLV-08",
+        name: "Pure Silver Nakshi Carved Pooja Thali",
+        category: "pooja-utensils",
+        metal: "silver",
+        purity: "92.5 Pure Silver",
+        weightCategory: "above-100g",
+        approxWeightNumber: 340,
+        grossWeight: "342.000 g",
+        image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-SLV-09",
+        name: "999 Certified Silver Coin (Lakshmi Ganesh)",
+        category: "silver-coins",
+        metal: "silver",
+        purity: "99.9% Pure Silver",
+        weightCategory: "10g - 25g",
+        approxWeightNumber: 20,
+        grossWeight: "20.000 g",
+        image: "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-SLV-10",
+        name: "Traditional Meenakari Bridal Bichhiya (3 Pairs)",
+        category: "rings-bichhiya",
+        metal: "silver",
+        purity: "92.5 Sterling Silver",
+        weightCategory: "10g - 25g",
+        approxWeightNumber: 16,
+        grossWeight: "16.400 g",
+        image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-GLD-11",
+        name: "22K BIS Hallmarked Double Vati Mangalsutra",
+        category: "gold-collection",
+        metal: "gold",
+        purity: "22K (916 Hallmark)",
+        weightCategory: "10g - 25g",
+        approxWeightNumber: 14,
+        grossWeight: "14.250 g",
+        image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: "SJ-GLD-12",
+        name: "22K Solid Gold Diamond-Cut Rope Chain",
+        category: "gold-collection",
+        metal: "gold",
+        purity: "22K (916 Hallmark)",
+        weightCategory: "10g - 25g",
+        approxWeightNumber: 18,
+        grossWeight: "18.500 g",
+        image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=600&q=80"
+      }
+    ];
+
+    // 2. STATE
+    const savedStore = JSON.parse(localStorage.getItem("sj_store") || "null");
+    const savedCategories = JSON.parse(localStorage.getItem("sj_categories") || "null");
+    const savedProds = JSON.parse(localStorage.getItem("sj_prods") || "null");
+
+    const App = {
+      store: Object.assign({}, DEFAULT_STORE, savedStore || {}),
+      categories: (savedCategories && Array.isArray(savedCategories) && savedCategories.length > 0) ? savedCategories : [...DEFAULT_CATEGORIES],
+      products: (savedProds && Array.isArray(savedProds) && savedProds.length > 0) ? savedProds : DEFAULT_PRODUCTS,
+      wishlist: JSON.parse(localStorage.getItem("sj_wishlist") || "[]"),
+      filters: {
+        search: "",
+        metal: "all",
+        category: "all",
+        weight: "all"
+      },
+      editingId: null,
+      compressedBase64: null
+    };
+
+    // 2b. OWNER LOGIN SYSTEM
+    // Credentials are stored as a salted SHA-256 hash (never the plain password).
+    const AUTH_KEY = "sj_owner_auth";
+    const SESSION_KEY = "sj_owner_session";
+    const SESSION_HOURS = 12;
+    let authMode = "login"; // login | setup | change
+
+    async function hashText(text, salt) {
+      const data = salt + "::" + text;
+      if (window.crypto && crypto.subtle) {
+        const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(data));
+        return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+      }
+      // Fallback for non-secure (http) contexts
+      let h1 = 5381, h2 = 52711;
+      for (let i = 0; i < data.length; i++) {
+        const c = data.charCodeAt(i);
+        h1 = (h1 * 33) ^ c;
+        h2 = (h2 * 33) ^ c;
+      }
+      return (h1 >>> 0).toString(16) + (h2 >>> 0).toString(16) + data.length;
+    }
+
+    function getAuth() {
+      try { return JSON.parse(localStorage.getItem(AUTH_KEY) || "null"); } catch (e) { return null; }
+    }
+
+    function isOwner() {
+      if (!getAuth()) return false;
+      try {
+        const s = JSON.parse(localStorage.getItem(SESSION_KEY) || "null");
+        return !!(s && s.expires && s.expires > Date.now());
+      } catch (e) { return false; }
+    }
+
+    function startOwnerSession() {
+      localStorage.setItem(SESSION_KEY, JSON.stringify({ expires: Date.now() + SESSION_HOURS * 3600 * 1000 }));
+      applyOwnerState();
+    }
+
+    function applyOwnerState() {
+      document.body.classList.toggle("is-owner", isOwner());
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function requireOwner() {
+      if (isOwner()) return true;
+      showToast("Owner login required");
+      openAuthModal();
+      return false;
+    }
+
+    function showAuthError(msg) {
+      const el = document.getElementById("auth-error");
+      if (!msg) { el.classList.add("hidden"); return; }
+      el.textContent = msg;
+      el.classList.remove("hidden");
+    }
+
+    function toggleAuthPassVisibility(show) {
+      ["auth-pass", "auth-confirm", "auth-current"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.type = show ? "text" : "password";
+      });
+    }
+
+    function openAuthModal(mode) {
+      const auth = getAuth();
+      if (!mode) mode = auth ? "login" : "setup";
+      if (mode === "change" && !isOwner()) mode = auth ? "login" : "setup";
+      if (mode === "login" && isOwner()) { openOwnerSettingsModal(); return; }
+      authMode = mode;
+
+      document.getElementById("auth-form").reset();
+      showAuthError("");
+      toggleAuthPassVisibility(false);
+
+      const title = document.getElementById("auth-title");
+      const hint = document.getElementById("auth-hint");
+      const btn = document.getElementById("auth-submit-btn");
+      const curWrap = document.getElementById("auth-current-wrap");
+      const confWrap = document.getElementById("auth-confirm-wrap");
+      const confInput = document.getElementById("auth-confirm");
+      const curInput = document.getElementById("auth-current");
+      const resetLink = document.getElementById("auth-reset-link");
+      const passLabel = document.getElementById("auth-pass-label");
+      const idLabel = document.getElementById("auth-id-label");
+
+      curWrap.classList.add("hidden"); curInput.required = false;
+      confWrap.classList.add("hidden"); confInput.required = false;
+      resetLink.classList.add("hidden");
+      passLabel.textContent = "Password";
+      idLabel.textContent = "Login ID";
+
+      if (mode === "setup") {
+        title.textContent = "Create Owner Login";
+        hint.textContent = "First time setup: choose a Login ID and a password (minimum 6 characters). Remember them, only you should know these.";
+        btn.textContent = "Create Login & Enter";
+        confWrap.classList.remove("hidden"); confInput.required = true;
+      } else if (mode === "change") {
+        title.textContent = "Change Owner Login";
+        hint.textContent = "Enter your current password, then set a new Login ID and password.";
+        btn.textContent = "Save New Login";
+        curWrap.classList.remove("hidden"); curInput.required = true;
+        confWrap.classList.remove("hidden"); confInput.required = true;
+        idLabel.textContent = "New Login ID";
+        passLabel.textContent = "New Password";
+        document.getElementById("auth-id").value = (auth && auth.id) || "";
+      } else {
+        title.textContent = "Owner Login";
+        hint.textContent = "Enter your Login ID and password to manage products, categories and store settings.";
+        btn.textContent = "Login";
+        resetLink.classList.remove("hidden");
+      }
+
+      const m = document.getElementById("auth-modal");
+      m.classList.remove("hidden");
+      m.classList.add("flex");
+      setTimeout(() => {
+        const first = mode === "change" ? curInput : document.getElementById("auth-id");
+        if (first) first.focus();
+      }, 100);
+    }
+
+    function closeAuthModal() {
+      const m = document.getElementById("auth-modal");
+      m.classList.add("hidden");
+      m.classList.remove("flex");
+      document.getElementById("auth-form").reset();
+      showAuthError("");
+    }
+
+    async function submitAuthForm(e) {
+      e.preventDefault();
+      showAuthError("");
+      const id = document.getElementById("auth-id").value.trim();
+      const pass = document.getElementById("auth-pass").value;
+      const confirmPass = document.getElementById("auth-confirm").value;
+      const current = document.getElementById("auth-current").value;
+      const auth = getAuth();
+
+      if (authMode === "login") {
+        if (!auth) { openAuthModal("setup"); return; }
+        const hash = await hashText(pass, auth.salt);
+        if (id.toLowerCase() !== auth.id.toLowerCase() || hash !== auth.hash) {
+          showAuthError("Wrong Login ID or password. Please try again.");
+          return;
+        }
+        startOwnerSession();
+        closeAuthModal();
+        showToast("Welcome, Owner! Owner panel unlocked.");
+        return;
+      }
+
+      // setup & change need valid new credentials
+      if (id.length < 3) { showAuthError("Login ID must be at least 3 characters."); return; }
+      if (pass.length < 6) { showAuthError("Password must be at least 6 characters."); return; }
+      if (pass !== confirmPass) { showAuthError("Passwords do not match."); return; }
+
+      if (authMode === "change") {
+        if (!isOwner() || !auth) { closeAuthModal(); return; }
+        const curHash = await hashText(current, auth.salt);
+        if (curHash !== auth.hash) { showAuthError("Current password is incorrect."); return; }
+      }
+
+      const salt = Math.random().toString(36).slice(2) + Date.now().toString(36);
+      const hash = await hashText(pass, salt);
+      localStorage.setItem(AUTH_KEY, JSON.stringify({ id, salt, hash }));
+      startOwnerSession();
+      closeAuthModal();
+      showToast(authMode === "setup" ? "Owner login created! You are now logged in." : "Login ID & password updated.");
+    }
+
+    function ownerLogout() {
+      localStorage.removeItem(SESSION_KEY);
+      closeOwnerSettingsModal();
+      closeAddProductModal();
+      applyOwnerState();
+      showToast("Logged out. Owner panel hidden.");
+    }
+
+    function resetOwnerLogin() {
+      if (!confirm("Reset owner login on this device? You will need to create a new Login ID & password. Your products and settings will NOT be deleted.")) return;
+      localStorage.removeItem(AUTH_KEY);
+      localStorage.removeItem(SESSION_KEY);
+      applyOwnerState();
+      openAuthModal("setup");
+    }
+
+    // 3. INITIALIZE
+    document.addEventListener("DOMContentLoaded", () => {
+      applyOwnerState();
+      renderStoreDetails();
+      renderCategoryPills();
+      renderWeightPills();
+      renderProducts();
+      updateWishlistUI();
+      setupSearch();
+      setupPhotoUpload();
+      if (window.lucide) lucide.createIcons();
+    });
+
+    // 4. RENDER STORE DETAILS
+    function renderStoreDetails() {
+      const s = App.store;
+      document.getElementById("nav-store-status").textContent = s.statusText || "Showroom Open Today";
+      document.getElementById("store-address-display").textContent = s.address;
+      document.getElementById("store-hours-display").textContent = s.timing + (s.sundayTiming ? ` | ${s.sundayTiming}` : "");
+      document.getElementById("store-phone-display").textContent = s.phone;
+
+      // Update Showroom Ready Stock Notice Banner
+      const bHead = document.getElementById("showroom-banner-heading");
+      if (bHead) bHead.textContent = s.moreNoticeHeading || "1,000+ More Vibrant Designs in Ready Stock!";
+      const bText = document.getElementById("showroom-banner-text");
+      if (bText) bText.textContent = s.moreNoticeText || DEFAULT_STORE.moreNoticeText;
+
+      const cleanPhone = s.phone.replace(/[^0-9]/g, "");
+      const callBtn = document.getElementById("store-phone-call-btn");
+      if (callBtn) callBtn.href = "tel:+" + cleanPhone;
+
+      const mobCall = document.getElementById("mobile-call-link");
+      if (mobCall) mobCall.href = "tel:+" + cleanPhone;
+
+      const waLinks = [
+        document.getElementById("nav-wa-link"),
+        document.getElementById("store-wa-contact-btn"),
+        document.getElementById("mobile-wa-link")
+      ];
+      waLinks.forEach(link => {
+        if (link) {
+          const msg = encodeURIComponent(`Hello ${s.storeName}, I want to inquire about your jewellery designs.`);
+          link.href = `https://wa.me/${s.whatsappNumber}?text=${msg}`;
+        }
+      });
+
+      const bannerWa = document.getElementById("showroom-banner-wa-btn");
+      if (bannerWa) {
+        const msg = encodeURIComponent(`Namaste ${s.storeName},\nI am browsing your online catalogue and would like to see more vibrant designs and video call options of your ready stock.`);
+        bannerWa.href = `https://wa.me/${s.whatsappNumber}?text=${msg}`;
+      }
+    }
+
+    // 5. RENDER CATEGORY PILLS & SELECTS
+    function renderCategoryPills() {
+      const c = document.getElementById("category-pills");
+      if (c) {
+        c.innerHTML = App.categories.map(cat => {
+          const active = App.filters.category === cat.id;
+          return `
+            <button 
+              type="button" 
+              onclick="setCategory('${cat.id}')" 
+              class="filter-btn px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap flex-shrink-0 ${active ? 'active' : 'bg-white text-stone-700'}">
+              ${cat.name}
+            </button>
+          `;
+        }).join("");
+      }
+
+      // Also populate inside Add/Edit modal category select
+      const sel = document.getElementById("prod-category");
+      if (sel) {
+        sel.innerHTML = App.categories.filter(x => x.id !== "all").map(cat => `
+          <option value="${cat.id}">${cat.name}</option>
+        `).join("");
+      }
+
+      renderCategoryManagerList();
+    }
+
+    function renderCategoryManagerList() {
+      const listEl = document.getElementById("category-manager-list");
+      if (!listEl) return;
+
+      listEl.innerHTML = App.categories.map(cat => {
+        const isAll = cat.id === "all";
+        return `
+          <span class="inline-flex items-center gap-1.5 bg-white border border-stone-200 px-2.5 py-1 rounded-full text-xs font-medium text-stone-800 shadow-2xs">
+            <span>${cat.name}</span>
+            ${!isAll ? `
+              <button 
+                type="button" 
+                onclick="deleteCategory('${cat.id}')" 
+                class="w-4 h-4 rounded-full bg-stone-100 hover:bg-red-100 hover:text-red-700 text-stone-500 flex items-center justify-center text-[10px] font-bold" 
+                title="Delete Category">
+                ✕
+              </button>
+            ` : `<span class="text-[9px] text-stone-400 font-bold uppercase">All</span>`}
+          </span>
+        `;
+      }).join("");
+    }
+
+    function addNewCategory() {
+      if (!requireOwner()) return;
+      const input = document.getElementById("new-category-name-input");
+      if (!input) return;
+      const name = input.value.trim();
+      if (!name) {
+        showToast("Please enter a category name");
+        return;
+      }
+
+      const exists = App.categories.some(c => c.name.toLowerCase() === name.toLowerCase());
+      if (exists) {
+        showToast("This category already exists");
+        return;
+      }
+
+      const id = "cat-" + Date.now();
+      App.categories.push({ id, name });
+      localStorage.setItem("sj_categories", JSON.stringify(App.categories));
+      input.value = "";
+      renderCategoryPills();
+      showToast(`Category added: ${name}`);
+    }
+
+    function deleteCategory(id) {
+      if (!requireOwner()) return;
+      if (id === "all") return;
+      const cat = App.categories.find(c => c.id === id);
+      const catName = cat ? cat.name : "Category";
+
+      if (!confirm(`Are you sure you want to delete category "${catName}"?`)) return;
+
+      App.categories = App.categories.filter(c => c.id !== id);
+      if (App.filters.category === id) {
+        App.filters.category = "all";
+      }
+      localStorage.setItem("sj_categories", JSON.stringify(App.categories));
+      renderCategoryPills();
+      renderProducts();
+      showToast(`Category removed: ${catName}`);
+    }
+
+    function restoreDefaultCategories() {
+      if (!requireOwner()) return;
+      if (!confirm("Restore default categories list?")) return;
+      App.categories = [...DEFAULT_CATEGORIES];
+      localStorage.setItem("sj_categories", JSON.stringify(App.categories));
+      renderCategoryPills();
+      renderProducts();
+      showToast("Default categories restored");
+    }
+
+    // 6. RENDER WEIGHT PILLS
+    function renderWeightPills() {
+      const w = document.getElementById("weight-pills");
+      if (!w) return;
+      w.innerHTML = DEFAULT_WEIGHTS.map(wt => {
+        const active = App.filters.weight === wt.id;
+        return `
+          <button 
+            type="button" 
+            onclick="setWeight('${wt.id}')" 
+            class="weight-chip px-2.5 py-1 rounded-lg text-xs border font-medium whitespace-nowrap flex-shrink-0 ${active ? 'active' : 'bg-[#faf8f4] border-stone-200 text-stone-700'}">
+            ${wt.label}
+          </button>
+        `;
+      }).join("");
+    }
+
+    // 7. RENDER PRODUCT GRID (2 COLUMNS ON MOBILE WITH READY STOCK NOTICE CARD)
+    function renderProducts() {
+      const grid = document.getElementById("products-grid");
+      const countEl = document.getElementById("product-count-text");
+      if (!grid) return;
+
+      let list = [...App.products];
+
+      // Filters
+      if (App.filters.metal !== "all") {
+        list = list.filter(p => p.metal === App.filters.metal);
+      }
+      if (App.filters.category !== "all") {
+        list = list.filter(p => p.category === App.filters.category);
+      }
+      if (App.filters.weight !== "all") {
+        const obj = DEFAULT_WEIGHTS.find(x => x.id === App.filters.weight);
+        if (obj && obj.min !== undefined) {
+          list = list.filter(p => (p.approxWeightNumber || 0) >= obj.min && (p.approxWeightNumber || 0) <= obj.max);
+        }
+      }
+      if (App.filters.search.trim() !== "") {
+        const q = App.filters.search.toLowerCase().trim();
+        list = list.filter(p => 
+          p.name.toLowerCase().includes(q) || 
+          p.purity.toLowerCase().includes(q) || 
+          p.weightCategory.toLowerCase().includes(q)
+        );
+      }
+
+      if (countEl) countEl.textContent = `Showing ${list.length} designs in collection`;
+
+      const moreMsg = encodeURIComponent(
+        `Namaste ${App.store.storeName},\nI am browsing your online catalogue. Since you have many more vibrant designs in ready stock at your showroom, please share more photos / connect for a video call.`
+      );
+      const moreWaUrl = `https://wa.me/${App.store.whatsappNumber}?text=${moreMsg}`;
+
+      if (list.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-10 px-4 text-center bg-white rounded-2xl border border-amber-200 shadow-sm max-w-xl mx-auto space-y-3">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center text-2xl shadow-inner">
+              💎
+            </div>
+            <div>
+              <p class="font-cinzel font-bold text-stone-900 text-sm sm:text-base">No Matching Uploaded Designs Found</p>
+              <p class="text-xs text-stone-600 mt-1 max-w-md mx-auto leading-relaxed">
+                ${App.store.moreNoticeText || "However, we carry 1,000+ more vibrant handcrafted designs in ready stock at our showroom that are not listed here."}
+              </p>
+            </div>
+            <div class="pt-1 flex flex-col sm:flex-row items-center justify-center gap-2">
+              <a 
+                href="${moreWaUrl}" 
+                target="_blank" 
+                class="w-full sm:w-auto px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-95">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Ask for Ready Stock on WhatsApp</span>
+              </a>
+              <button onclick="resetFilters()" class="w-full sm:w-auto px-4 py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-xl text-xs font-semibold">
+                Reset Filters
+              </button>
+            </div>
+          </div>
+        `;
+        if (window.lucide) lucide.createIcons();
+        return;
+      }
+
+      const productsHtml = list.map(item => {
+        const isSaved = App.wishlist.some(x => x.id === item.id);
+        const metalBadge = item.metal === "gold" 
+          ? `<span class="bg-[#fef3c7] text-[#92400e] border border-[#fde68a] px-1.5 py-0.5 rounded text-[9px] font-bold uppercase">22K Gold</span>`
+          : `<span class="bg-[#f1f5f9] text-[#334155] border border-[#cbd5e1] px-1.5 py-0.5 rounded text-[9px] font-bold uppercase">Pure Silver</span>`;
+
+        const waMsg = encodeURIComponent(
+          `Namaste Satyam Jewellers!\nI saw this design on your mobile catalogue:\n` +
+          `*Product:* ${item.name}\n` +
+          `*Weight Category:* ${item.weightCategory}\n` +
+          `*Gross Weight:* ${item.grossWeight || 'N/A'}\n` +
+          `*Purity:* ${item.purity}\n\n` +
+          `Please share real photos or available weight options on WhatsApp.`
+        );
+        const waUrl = `https://wa.me/${App.store.whatsappNumber}?text=${waMsg}`;
+
+        return `
+          <div class="product-card flex flex-col justify-between overflow-hidden">
+            <!-- Image & Badge -->
+            <div class="relative aspect-square bg-[#fbf9f5] overflow-hidden">
+              <img 
+                src="${item.image}" 
+                alt="${item.name}" 
+                class="w-full h-full object-cover" 
+                loading="lazy"
+                onerror="this.src='https://images.unsplash.com/photo-1611591475152-478311382490?auto=format&fit=crop&w=600&q=80'"
+              />
+              <div class="absolute top-1.5 left-1.5">${metalBadge}</div>
+              <button 
+                type="button" 
+                onclick="toggleWishlist('${item.id}')" 
+                class="absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-white/95 text-stone-700 flex items-center justify-center shadow-sm active:scale-75">
+                <span class="text-xs ${isSaved ? 'text-red-500 font-bold' : 'text-stone-400'}">${isSaved ? '❤️' : '🤍'}</span>
+              </button>
+            </div>
+
+            <!-- Content -->
+            <div class="p-2 sm:p-3 flex-1 flex flex-col justify-between">
+              <div>
+                <p class="text-[10px] text-amber-800 font-semibold truncate">${item.purity}</p>
+                <h4 class="font-serif-luxury font-bold text-stone-900 text-xs sm:text-sm line-clamp-2 leading-snug mt-0.5">${item.name}</h4>
+                
+                <!-- Weight Highlight -->
+                <div class="mt-1.5 p-1.5 bg-[#fdfaf2] border border-[#f0e4cf] rounded-lg">
+                  <div class="flex items-center justify-between text-[10px] sm:text-[11px]">
+                    <span class="text-stone-500">Weight:</span>
+                    <strong class="text-amber-900 font-mono">${item.weightCategory}</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Buttons: WhatsApp & Owner Edit -->
+              <div class="mt-2.5 pt-1.5 border-t border-stone-100 flex flex-col gap-1">
+                <a 
+                  href="${waUrl}" 
+                  target="_blank" 
+                  class="w-full py-1.5 px-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-[10px] sm:text-xs font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95">
+                  <span>💬 WhatsApp</span>
+                </a>
+
+                <div class="owner-only grid grid-cols-2 gap-1 text-[10px]">
+                  <button 
+                    onclick="editProductItem('${item.id}')" 
+                    class="py-1 px-1 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 rounded font-bold text-center">
+                    ✏️ Edit
+                  </button>
+                  <button 
+                    onclick="deleteProductItem('${item.id}')" 
+                    class="py-1 px-1 bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 rounded font-semibold text-center">
+                    🗑️ Del
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      // Appended Special Card: 1,000+ More Vibrant Designs in Ready Stock
+      const moreNoticeCard = `
+        <div class="product-card bg-gradient-to-br from-[#fefbf6] via-white to-[#fbf7ed] border-2 border-dashed border-[#e8dcb8] rounded-xl flex flex-col justify-between p-3 sm:p-4 text-center shadow-xs">
+          <div class="flex flex-col items-center">
+            <span class="inline-flex items-center gap-1 bg-amber-100/90 text-amber-900 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full mb-1.5">
+              <span>✨</span> Ready Stock
+            </span>
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center text-lg sm:text-xl mb-1 text-amber-800 shadow-inner">
+              💎
+            </div>
+            <h4 class="font-serif-luxury font-bold text-stone-900 text-xs sm:text-sm leading-snug">
+              ${App.store.moreNoticeHeading || "1,000+ More Vibrant Designs!"}
+            </h4>
+            <p class="text-[10px] sm:text-[11px] text-stone-600 mt-1 line-clamp-3 leading-relaxed">
+              ${App.store.moreNoticeText || "We have hundreds of unique handcrafted pieces in our showroom ready stock that cannot all be listed online."}
+            </p>
+          </div>
+
+          <div class="mt-2.5 pt-2 border-t border-amber-100 flex flex-col gap-1">
+            <a 
+              href="${moreWaUrl}" 
+              target="_blank" 
+              class="w-full py-2 px-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-[10px] sm:text-xs font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95">
+              <span>💬 Ask for More Designs</span>
+            </a>
+            <span class="text-[9px] text-stone-400 font-medium">Walk-ins welcome at showroom</span>
+          </div>
+        </div>
+      `;
+
+      grid.innerHTML = productsHtml + moreNoticeCard;
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // 8. FILTER CONTROLS
+    function setMetalFilter(metal) {
+      App.filters.metal = metal;
+      document.querySelectorAll(".metal-btn").forEach(btn => {
+        if (btn.dataset.metal === metal) {
+          btn.className = "metal-btn flex-1 py-1.5 rounded-lg text-center bg-white shadow-sm text-stone-900 font-bold";
+        } else {
+          btn.className = "metal-btn flex-1 py-1.5 rounded-lg text-center text-stone-600 font-semibold";
+        }
+      });
+      renderProducts();
+    }
+
+    function setCategory(id) {
+      App.filters.category = id;
+      renderCategoryPills();
+      renderProducts();
+    }
+
+    function setWeight(id) {
+      App.filters.weight = id;
+      renderWeightPills();
+      renderProducts();
+    }
+
+    function resetFilters() {
+      App.filters = { search: "", metal: "all", category: "all", weight: "all" };
+      const s = document.getElementById("search-input");
+      if (s) s.value = "";
+      setMetalFilter("all");
+      renderCategoryPills();
+      renderWeightPills();
+      renderProducts();
+    }
+
+    function setupSearch() {
+      const s = document.getElementById("search-input");
+      if (s) {
+        s.addEventListener("input", (e) => {
+          App.filters.search = e.target.value;
+          renderProducts();
+        });
+      }
+    }
+
+    // 9. OWNER SETTINGS MODAL (CHANGE NUMBER, HOURS, ADDRESS, CATEGORIES, READY STOCK NOTICE)
+    function openOwnerSettingsModal(targetSection) {
+      if (!requireOwner()) return;
+      const s = App.store;
+      document.getElementById("setting-store-name").value = s.storeName || "Satyam Jewellers";
+      document.getElementById("setting-store-whatsapp").value = s.whatsappNumber || "919876543210";
+      document.getElementById("setting-store-phone").value = s.phone || "+91 98765 43210";
+      document.getElementById("setting-store-hours").value = s.timing || "Mon - Sat: 10:30 AM - 8:30 PM";
+      document.getElementById("setting-store-sunday").value = s.sundayTiming || "Sunday: 11:30 AM - 5:30 PM";
+      document.getElementById("setting-store-address").value = s.address || "Sarafa Bazar, Main Market";
+      document.getElementById("setting-store-status").value = s.statusText || "Showroom Open Today";
+
+      const headEl = document.getElementById("setting-more-heading");
+      if (headEl) headEl.value = s.moreNoticeHeading || "1,000+ More Vibrant Designs in Ready Stock!";
+      const textEl = document.getElementById("setting-more-text");
+      if (textEl) textEl.value = s.moreNoticeText || DEFAULT_STORE.moreNoticeText;
+
+      renderCategoryManagerList();
+
+      const modal = document.getElementById("owner-settings-modal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      if (targetSection === "category-section") {
+        setTimeout(() => {
+          const el = document.getElementById("settings-category-section");
+          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+          const inp = document.getElementById("new-category-name-input");
+          if (inp) inp.focus();
+        }, 150);
+      }
+    }
+
+    function closeOwnerSettingsModal() {
+      document.getElementById("owner-settings-modal").classList.add("hidden");
+      document.getElementById("owner-settings-modal").classList.remove("flex");
+    }
+
+    function saveStoreSettings(e) {
+      e.preventDefault();
+      if (!requireOwner()) return;
+      App.store = {
+        storeName: document.getElementById("setting-store-name").value.trim(),
+        whatsappNumber: document.getElementById("setting-store-whatsapp").value.trim(),
+        phone: document.getElementById("setting-store-phone").value.trim(),
+        timing: document.getElementById("setting-store-hours").value.trim(),
+        sundayTiming: document.getElementById("setting-store-sunday").value.trim(),
+        address: document.getElementById("setting-store-address").value.trim(),
+        statusText: document.getElementById("setting-store-status").value.trim(),
+        moreNoticeHeading: (document.getElementById("setting-more-heading")?.value || "").trim() || "1,000+ More Vibrant Designs in Ready Stock!",
+        moreNoticeText: (document.getElementById("setting-more-text")?.value || "").trim() || DEFAULT_STORE.moreNoticeText
+      };
+      localStorage.setItem("sj_store", JSON.stringify(App.store));
+      renderStoreDetails();
+      renderProducts();
+      closeOwnerSettingsModal();
+      showToast("Store settings, notice & numbers updated successfully!");
+    }
+
+    // 10. ADD / EDIT PRODUCT MODAL
+    function openAddProductModal() {
+      if (!requireOwner()) return;
+      App.editingId = null;
+      App.compressedBase64 = null;
+      document.getElementById("add-product-form").reset();
+      document.getElementById("product-photo-preview").classList.add("hidden");
+      document.getElementById("product-modal-title").textContent = "Add Jewellery Item";
+      document.getElementById("prod-submit-btn").textContent = "+ Save to Website (तुरंत जोड़ें)";
+
+      document.getElementById("add-product-modal").classList.remove("hidden");
+      document.getElementById("add-product-modal").classList.add("flex");
+    }
+
+    function closeAddProductModal() {
+      document.getElementById("add-product-modal").classList.add("hidden");
+      document.getElementById("add-product-modal").classList.remove("flex");
+    }
+
+    function editProductItem(id) {
+      if (!requireOwner()) return;
+      const item = App.products.find(x => x.id === id);
+      if (!item) return;
+
+      App.editingId = id;
+      App.compressedBase64 = item.image;
+
+      document.getElementById("prod-name").value = item.name;
+      document.getElementById("prod-category").value = item.category;
+      document.getElementById("prod-metal").value = item.metal;
+      document.getElementById("prod-weight-cat").value = item.weightCategory;
+      document.getElementById("prod-weight-num").value = item.approxWeightNumber;
+      document.getElementById("prod-gross-wt").value = item.grossWeight || "";
+      document.getElementById("prod-purity").value = item.purity;
+      document.getElementById("product-url-input").value = item.image.startsWith("data:") ? "" : item.image;
+
+      if (item.image) {
+        document.getElementById("preview-img-tag").src = item.image;
+        document.getElementById("product-photo-preview").classList.remove("hidden");
+      }
+
+      document.getElementById("product-modal-title").textContent = "Edit Jewellery Item";
+      document.getElementById("prod-submit-btn").textContent = "Update Item (बदलाव सेव करें)";
+
+      document.getElementById("add-product-modal").classList.remove("hidden");
+      document.getElementById("add-product-modal").classList.add("flex");
+    }
+
+    function deleteProductItem(id) {
+      if (!requireOwner()) return;
+      if (!confirm("Are you sure you want to remove this item from the catalogue?")) return;
+      App.products = App.products.filter(x => x.id !== id);
+      localStorage.setItem("sj_prods", JSON.stringify(App.products));
+      renderProducts();
+      showToast("Item deleted from catalogue");
+    }
+
+    function setupPhotoUpload() {
+      const fileInput = document.getElementById("product-file-input");
+      if (!fileInput) return;
+
+      fileInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        showToast("Compressing photo for fast mobile loading...");
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = (event) => {
+          const img = new Image();
+          img.src = event.target.result;
+          img.onload = () => {
+            const canvas = document.createElement("canvas");
+            let w = img.width;
+            let h = img.height;
+            const max = 800;
+            if (w > h && w > max) {
+              h = Math.round((h * max) / w);
+              w = max;
+            } else if (h > max) {
+              w = Math.round((w * max) / h);
+              h = max;
+            }
+            canvas.width = w;
+            canvas.height = h;
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0, w, h);
+            App.compressedBase64 = canvas.toDataURL("image/jpeg", 0.75);
+
+            document.getElementById("preview-img-tag").src = App.compressedBase64;
+            document.getElementById("product-photo-preview").classList.remove("hidden");
+            showToast("Photo attached & compressed!");
+          };
+        };
+      });
+    }
+
+    function saveProductItem(e) {
+      e.preventDefault();
+      if (!requireOwner()) return;
+      const name = document.getElementById("prod-name").value.trim();
+      const category = document.getElementById("prod-category").value;
+      const metal = document.getElementById("prod-metal").value;
+      const weightCategory = document.getElementById("prod-weight-cat").value.trim();
+      const approxWeightNumber = parseFloat(document.getElementById("prod-weight-num").value) || 20;
+      const grossWeight = document.getElementById("prod-gross-wt").value.trim() || weightCategory;
+      const purity = document.getElementById("prod-purity").value.trim() || (metal === "gold" ? "22K Gold" : "92.5 Silver");
+      const urlInput = document.getElementById("product-url-input").value.trim();
+
+      const finalImage = App.compressedBase64 || urlInput || "https://images.unsplash.com/photo-1611591475152-478311382490?auto=format&fit=crop&w=600&q=80";
+
+      if (App.editingId) {
+        // Edit existing
+        const idx = App.products.findIndex(x => x.id === App.editingId);
+        if (idx > -1) {
+          App.products[idx] = {
+            ...App.products[idx],
+            name,
+            category,
+            metal,
+            weightCategory,
+            approxWeightNumber,
+            grossWeight,
+            purity,
+            image: finalImage
+          };
+          showToast(`Updated: ${name}`);
+        }
+      } else {
+        // Add new
+        const newProduct = {
+          id: "SJ-" + Math.floor(1000 + Math.random() * 9000),
+          name,
+          category,
+          metal,
+          weightCategory,
+          approxWeightNumber,
+          grossWeight,
+          purity,
+          image: finalImage
+        };
+        App.products.unshift(newProduct);
+        showToast(`Added: ${name}`);
+      }
+
+      localStorage.setItem("sj_prods", JSON.stringify(App.products));
+      renderProducts();
+      closeAddProductModal();
+    }
+
+    // 11. WISHLIST
+    function toggleWishlist(id) {
+      const p = App.products.find(x => x.id === id);
+      if (!p) return;
+      const idx = App.wishlist.findIndex(x => x.id === id);
+      if (idx > -1) {
+        App.wishlist.splice(idx, 1);
+        showToast("Removed from Wishlist");
+      } else {
+        App.wishlist.push(p);
+        showToast("Saved to Wishlist!");
+      }
+      localStorage.setItem("sj_wishlist", JSON.stringify(App.wishlist));
+      updateWishlistUI();
+      renderProducts();
+    }
+
+    function updateWishlistUI() {
+      const count = App.wishlist.length;
+      document.querySelectorAll(".wishlist-counter-badge").forEach(b => {
+        b.textContent = count;
+        b.style.display = count > 0 ? "flex" : "none";
+      });
+
+      const header = document.getElementById("wishlist-count-header");
+      if (header) header.textContent = `${count} designs shortlisted`;
+
+      const list = document.getElementById("wishlist-items-list");
+      if (!list) return;
+
+      if (count === 0) {
+        list.innerHTML = `<div class="py-12 text-center text-stone-400 text-xs">No designs shortlisted yet. Tap the heart on any item.</div>`;
+        return;
+      }
+
+      list.innerHTML = App.wishlist.map(item => `
+        <div class="flex items-center gap-2.5 p-2 bg-white rounded-xl border">
+          <img src="${item.image}" class="w-12 h-12 object-cover rounded-lg border flex-shrink-0" alt="">
+          <div class="flex-1 min-w-0">
+            <h5 class="text-xs font-bold text-stone-800 truncate">${item.name}</h5>
+            <p class="text-[10px] text-amber-800 font-mono">Weight: ${item.weightCategory}</p>
+          </div>
+          <button onclick="toggleWishlist('${item.id}')" class="text-stone-400 hover:text-red-500 p-1">✕</button>
+        </div>
+      `).join("");
+    }
+
+    function openWishlistDrawer() {
+      const d = document.getElementById("wishlist-drawer");
+      const b = document.getElementById("wishlist-backdrop");
+      if (d && b) {
+        b.classList.remove("hidden");
+        d.classList.remove("translate-x-full");
+      }
+    }
+
+    function closeWishlistDrawer() {
+      const d = document.getElementById("wishlist-drawer");
+      const b = document.getElementById("wishlist-backdrop");
+      if (d && b) {
+        d.classList.add("translate-x-full");
+        b.classList.add("hidden");
+      }
+    }
+
+    function sendWishlistToWhatsApp() {
+      if (App.wishlist.length === 0) return;
+      let msg = `*Namaste Satyam Jewellers,*\nI shortlisted ${App.wishlist.length} designs from your mobile catalogue:\n\n`;
+      App.wishlist.forEach((item, i) => {
+        msg += `${i+1}. *${item.name}* (Weight: ${item.weightCategory}, ${item.purity})\n`;
+      });
+      msg += `\nPlease keep these ready for viewing at your showroom. Thank you!`;
+      window.open(`https://wa.me/${App.store.whatsappNumber}?text=${encodeURIComponent(msg)}`, "_blank");
+    }
+
+    // 12. TOAST
+    function showToast(msg) {
+      const t = document.getElementById("toast");
+      const txt = document.getElementById("toast-text");
+      if (!t || !txt) return;
+      txt.textContent = msg;
+      t.classList.remove("opacity-0", "pointer-events-none");
+      t.classList.add("opacity-100");
+      setTimeout(() => {
+        t.classList.remove("opacity-100");
+        t.classList.add("opacity-0", "pointer-events-none");
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
